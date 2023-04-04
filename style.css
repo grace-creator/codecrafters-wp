@@ -11,6 +11,14 @@ Text Domain: my_custom_theme
 Tags: accessibility-ready, responsive-layout, custom-background, custom-logo, custom-menu, featured-images, threaded-comments
 */
 
+/*color palette: #590F45, #21BFBF, #F2D6A2, #F28F16, #F21D1D*/
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 
 /* Sidebar */
 body {
@@ -39,9 +47,11 @@ body {
   top: 0;
   bottom: 0;
   width: 250px;
-  background-color: #f0f0f0;
+  background-color: #21BFBF;
   z-index: 1000;
   transition: left 0.3s;
+  padding: 1px;
+  padding-top: 63px;
 }
 
 #sidebar-menu {
@@ -49,15 +59,16 @@ body {
 }
 
 #sidebar-toggle {
-  position: fixed;
+  position: absolute;
   left: 10px;
   top: 10px;
   width: 50px;
   height: 50px;
-  background-color: #34db5e;
-  color: #ff0000;
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
   border: none;
-  border-radius: 25px;
+  border-radius: 5px;
   cursor: pointer;
   z-index: 1001;
 }
@@ -67,27 +78,99 @@ body {
   left: 0;
 }
 
-
   
 /* Header */
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
-  background-color: #3498db; /* Change to your desired header background color */
-  color: #fff;
+  background-color: #21BFBF;
+  color: #000000;
 }
+
 
 header h1 {
-  margin: 0;
-  padding-left: 10px;
+  color: #000000;
 }
 
 
+/* Main content */
+main {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Block styles */
+.block {
+  margin-bottom: 40px;
+}
+
+/* Block 1 */
+.block-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #21BFBF;
+  padding: 20px;
+  margin: 0;
+}
+
+.block-1-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.block-1-image {
+  flex: 1;
+  /* Add background image or insert <img> element */
+  background-color: #47bebe; /* Replace with background-image if needed */
+  height: 200px;
+  border-radius: 10px;
+}
+
+/* Block 2 */
+.block-2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #21BFBF;
+  padding: 20px;
+  margin: 0;
+}
+
+.block-2-text {
+  flex: 1;
+  margin: 0 10px;
+  background-color: #21bfbf;
+  color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Block 3 */
+.block-3 {
+  background-color: #21BFBF;
+  padding: 20px;
+  margin: 0;
+}
+
+.block-3-image {
+  width: 100%;
+  height: 300px;
+  /* Add background image or insert <img> element */
+  background-color:#47bebe; /* Replace with background-image if needed */
+  border-radius: 10px;
+}
 
 
   /* Footer */
+  footer {
+    padding: 10px; /* Add some padding for better appearance */
+    text-align: center; /* Center the text within the footer */
+    background-color: #21BFBF;
+    color: #000000;
+  }
 
-  /* Blog */
+
+  /* Page */
  
