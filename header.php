@@ -7,8 +7,8 @@
 </head>
 <body <?php body_class(); ?>>
   <header>
-  <h1>CodeCrafters</h1>
-  <button id="sidebar-toggle" class="sidebar-toggle">Toggle Sidebar</button>
+  <h1>CODECRAFTERS</h1>
+  <button id="sidebar-toggle" class="sidebar-toggle">Home</button>
 
   
   </header>
