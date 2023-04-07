@@ -11,8 +11,10 @@
   <header>
   <h1>CODECRAFTERS</h1>
   <button id="sidebar-toggle" class="sidebar-toggle">
-    <span class="hamburger-icon"></span>
-
-  </button>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
 
   </header>
