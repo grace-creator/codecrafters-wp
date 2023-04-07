@@ -19,7 +19,6 @@ html, body {
   padding: 0;
 }
 
-
 /* Sidebar */
 body {
   position: relative;
@@ -39,7 +38,6 @@ body {
 .sidebar-visible .sidebar-container {
   transform: translateX(0);
 }
-
 
 #sidebar {
   position: fixed;
@@ -65,18 +63,61 @@ body {
   width: 50px;
   height: 50px;
   background-color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.sidebar-visible #sidebar {
-  left: 0;
+#sidebar-toggle span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 4px;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.25s ease-in-out;
 }
+
+#sidebar-toggle span:nth-child(1) {
+  top: 18px;
+}
+
+#sidebar-toggle span:nth-child(2),
+#sidebar-toggle span:nth-child(3) {
+  top: 24px;
+}
+
+#sidebar-toggle span:nth-child(4) {
+  top: 30px;
+}
+
+#sidebar-toggle.active span:nth-child(1) {
+  top: 24px;
+  width: 0%;
+  left: 50%;
+}
+
+#sidebar-toggle.active span:nth-child(2) {
+  transform: translateY(-6px) translateX(-50%) rotate(45deg);
+}
+
+#sidebar-toggle.active span:nth-child(3) {
+  transform: translateY(-6px) translateX(-50%) rotate(-45deg);
+}
+
+#sidebar-toggle.active span:nth-child(4) {
+  top: 24px;
+  width: 0%;
+  left: 50%;
+}
+
 
   
 /* Header */
@@ -154,7 +195,6 @@ main {
   background-color: #21BFBF;
   padding: 20px;
   margin: 0;
-  overflow: visible;
 }
 
 .block-3-image {
