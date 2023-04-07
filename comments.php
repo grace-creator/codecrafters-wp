@@ -1,3 +1,4 @@
+<?php
 // Get only the approved comments
 $args = array(
 	'status' => 'approve',
@@ -15,3 +16,4 @@ if ( $comments ) {
 } else {
 	echo 'No comments found.';
 }
+?>
