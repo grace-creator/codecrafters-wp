@@ -70,6 +70,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 4px;
 }
 
 #sidebar-toggle span {
@@ -86,36 +87,40 @@ body {
 }
 
 #sidebar-toggle span:nth-child(1) {
-  top: 18px;
+  top: 13px;
 }
 
 #sidebar-toggle span:nth-child(2),
 #sidebar-toggle span:nth-child(3) {
-  top: 24px;
+  top: 23px;
 }
 
 #sidebar-toggle span:nth-child(4) {
-  top: 30px;
+  top: 33px;
 }
 
 #sidebar-toggle.active span:nth-child(1) {
-  top: 24px;
+  top: 10px;
   width: 0%;
   left: 50%;
 }
 
 #sidebar-toggle.active span:nth-child(2) {
-  transform: translateY(-6px) translateX(-50%) rotate(45deg);
+  transform: translateY(0) translateX(-50%) rotate(45deg);
 }
 
 #sidebar-toggle.active span:nth-child(3) {
-  transform: translateY(-6px) translateX(-50%) rotate(-45deg);
+  transform: translateY(0) translateX(-50%) rotate(-45deg);
 }
 
 #sidebar-toggle.active span:nth-child(4) {
-  top: 24px;
+  top: 10px;
   width: 0%;
   left: 50%;
+}
+
+.sidebar-container * {
+  z-index: 1000;
 }
 
 
@@ -127,7 +132,7 @@ header {
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
-  background-color: #21BFBF;
+  background-color: #ffffff;
   color: #000000;
 }
 
@@ -159,12 +164,12 @@ main {
 
 .block-1-text {
   flex: 1;
-  margin-right: 20px;
+  margin: 0 30px; 
 }
 
 .block-1-image {
   width: 100%;
-  max-width: 50%;
+  max-width: 200px;
   height: 300px; /* Adjust this value to your desired height */
   background-size: cover;
   background-position: center;
@@ -184,7 +189,7 @@ main {
 .block-2-text {
   flex: 1;
   margin: 0 10px;
-  background-color: #21bfbf;
+  background-color: #ffffff85;
   color: #000000;
   padding: 20px;
   border-radius: 10px;
@@ -192,16 +197,26 @@ main {
 
 /* Block 3 */
 .block-3 {
+  display: flex;
+  justify-content:space-between;
   background-color: #21BFBF;
   padding: 20px;
   margin: 0;
 }
 
 .block-3-image {
-  width: 100%;
+  width: 50%;
+  max-width: 630px;
+  min-width: 200px;
   height: 300px; /* Adjust this value to your desired height */
   background-size: cover;
   background-position: center;
+  border-radius: 10px;
+}
+
+.block-3-text { 
+  color: #000000;
+  padding: 20px;
   border-radius: 10px;
 }
 
