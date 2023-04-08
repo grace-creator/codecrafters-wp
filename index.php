@@ -32,6 +32,9 @@
     <div class="block-3-image"
     style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/closed-e.png');">
     </div>
+    <div class="block-3-text">
+      <h3>Night Mode, Light Mode & Waggy Tail Mode</h3>
+      <p>Introducing our three captivating minimalist WordPress themes, designed to provide a clean and clutter-free experience for your visitors while adding an adorable and engaging element – a lovable golden retriever!</p>
     </div>
   
   </section>
