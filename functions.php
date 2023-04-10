@@ -1,11 +1,4 @@
 <?php
-/* sidebar functionality */
-function my_custom_theme_scripts() {
-    wp_enqueue_script( 'jquery' ); // Make sure jQuery is enqueued
-    wp_enqueue_script( 'sidebar', get_template_directory_uri() . '/sidebar.js', array( 'jquery' ), '1.0.0', true );
-}
-add_action( 'wp_enqueue_scripts', 'my_custom_theme_scripts' );
-
 
 /* style.css linked */
 function my_custom_theme_styles() {
@@ -14,12 +7,29 @@ function my_custom_theme_styles() {
 
 add_action( 'wp_enqueue_scripts', 'my_custom_theme_styles' );
 
-/*  register sidebar menu location on wordpress theme */
+/*  register menu location on wordpress theme */
 function my_custom_theme_menus() {
     register_nav_menus(array(
-        'sidebar-menu' => __('Sidebar Menu', 'my_custom_theme'),
+        'primary-menu' => __('Primary Menu', 'my_custom_theme'),
     ));
 }
-add_action('after_setup_theme', 'my_custom_theme_menus'); 
+add_action('after_setup_theme', 'my_custom_theme_menus');
+
+
+/*widgets*/
+
+function codecrafters_widgets_init() {
+     register_sidebar( array(
+        'name'          => __( 'Footer Widgets', 'codecrafters' ),
+        'id'            => 'footer-widgets',
+        'description'   => __( 'Widgets in this area will be shown in the footer.', 'codecrafters' ),
+        'before_widget' => '<section id="%1$s" class="footer-widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widgettitle">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'codecrafters_widgets_init' );
+
 
 ?>
