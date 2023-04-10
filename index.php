@@ -39,6 +39,7 @@
   
   </section>
 
+ 
 
   <?php
   if ( have_posts() ) :
@@ -51,5 +52,4 @@
   ?>
 </main>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
