@@ -1,4 +1,8 @@
 <footer>
+<div class="footer-widgets">
+    <?php dynamic_sidebar( 'footer-widgets' ); ?>
+  </div>
+
     <p>© <?php echo date('Y'); ?> CodeCrafters. All rights reserved. Licensed under the GNU General Public License v2 or later.</p>
   </footer>
   <script>
@@ -12,6 +16,8 @@
   ghostImage.style.transform = `translateY(${scrollPercentage * 100}%)`;
   ghostImage.style.opacity = maxOpacity - scrollPercentage;
 });
+
+  
 
 </script>
 
