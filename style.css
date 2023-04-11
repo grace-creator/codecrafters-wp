@@ -40,7 +40,25 @@ h1 {
 
 .main-navigation {
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+}
+
+.main-navigation a {
+  color: #000;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.main-navigation a:hover {
+  text-decoration: underline;
+}
+
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_item > a {
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .main-navigation ul {
@@ -89,6 +107,51 @@ h1 {
 /* Main content */
 main {
   font-family:'Courier New', Courier, monospace;
+}
+
+.about-title {
+  font-size: 200px;
+  text-align: left;
+  grid-area: title;
+}
+
+.about-paragraph {
+  text-align: justify;
+  grid-area: paragraph;
+  margin: 30px;
+}
+
+.about-grid-container {
+  display: grid;
+  grid-template-areas:
+    "title ."
+    ". paragraph";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* Mobile devices (767px and below) */
+@media (max-width: 767px) {
+  .about-title {
+    font-size: 40px;
+  }
+
+  .about-grid-container {
+    grid-template-areas:
+      "title"
+      "paragraph";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    border-right: none;
+  }
+
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* Block styles */
@@ -244,4 +307,9 @@ main {
     object-fit: cover;
   }
 
-  
+ /* Search Bar */
+.search-form input[type="search"] {
+  max-width: 50px; /* Adjust this value to your desired width */
+  width: 100%;
+  box-sizing: border-box; /* Add this to include padding and border in the width calculation */
+}
