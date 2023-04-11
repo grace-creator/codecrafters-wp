@@ -5,28 +5,19 @@
 <?php get_header(); ?>
 
 <main>
-<section class="block block-1">
-    <div class="block-4-text">
-      <h1>About</h1>
-      <p>This minimalist theme is designed to make your content shine. Its simplicity and clean design ensure that your users have an enjoyable experience navigating your website.</p>
-    </div>
-    <div 
-    class="block-4-image" 
-    id="ghost-image"
-    style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/ghost2.png');">
-    </div>
-  </section>
    
   <div class="about-section">
-  <p>Your about paragraph goes here.</p>
-</div>
+    <div class="about-grid-container">
+      <h1 class="about-title">About</h1>
+      <p class="about-paragraph">Waggy Tail Mode. It's sure to add a playful and engaging element to your website, delighting visitors with the charming golden retriever following them around as they explore. This unique and interactive feature will create a memorable user experience, setting your website apart and showcasing your content.</p>
+    </div>
+  </div>
 
-<div class="image-container">
-  <img src="<?php echo get_template_directory_uri(); ?>/images/closed-e.png" alt="Image 1" class="circle-image">
-  <img src="<?php echo get_template_directory_uri(); ?>/images/ghost2.png" alt="Image 2" class="circle-image">
-  <img src="<?php echo get_template_directory_uri(); ?>/images/ghost2.png" alt="Image 3" class="circle-image">
-</div>
-
+  <div class="image-container">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/closed-e.png" alt="Image 1" class="circle-image">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/ghost2.png" alt="Image 2" class="circle-image">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/ghost2.png" alt="Image 3" class="circle-image">
+  </div>
 
   <?php
   if ( have_posts() ) :
@@ -38,5 +29,6 @@
   endif;
   ?>
 </main>
+
 
 <?php get_footer(); ?>
