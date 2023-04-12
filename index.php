@@ -9,7 +9,7 @@
     <div 
     class="block-1-image" 
     id="ghost-image"
-    style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/ghost2.png');">
+    style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/golden.png');">
     </div>
   </section>
   
@@ -30,7 +30,7 @@
   
   <section class="block block-3">
     <div class="block-3-image"
-    style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/closed-e.png');">
+    style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/glas.png');">
     </div>
     <div class="block-3-text">
       <h3>Night Mode, Light Mode & Waggy Tail Mode</h3>
