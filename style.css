@@ -295,9 +295,9 @@ main {
   .image-container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* adjust this value for the desired spacing between images */
-    background-color: #21BFBF; /* change this value to set the desired background color */
-    padding: 20px; /* add padding around the container */
+    gap: 20px; 
+    background-color: #21BFBF; 
+    padding: 20px; 
   }
 
   .circle-image {
@@ -389,27 +389,32 @@ main {
   
 
   /*single post*/
-  .single-post-container .post-thumbnail {
-    max-height: 500px; /* Adjust this value to control the maximum height of the image */
+  .post-thumbnail-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  .post-thumbnail {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
     overflow: hidden;
   }
   
-  .single-post-container .post-thumbnail img {
-    display: block;
+  .post-thumbnail img {
     width: 100%;
     height: auto;
+    object-fit: cover;
   }
   
-  .single-post-container .entry-content {
-    clear: both;
-  }
   
-
 
   /* Hyperlinks */
 
   a {
-    color: #000000; /* Black color */
+    color: #000000; 
     text-decoration: none;
   }
   

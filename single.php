@@ -9,22 +9,20 @@
           <header class="entry-header">
             <h1 class="entry-title"><?php the_title(); ?></h1>
           </header>
-          
-          <div class="post-thumbnail-wrapper">
-            <?php if (has_post_thumbnail()) : ?>
+
+          <?php if (has_post_thumbnail()) : ?>
+            <div class="post-thumbnail-container">
               <div class="post-thumbnail">
                 <?php the_post_thumbnail(); ?>
               </div>
-            <?php endif; ?>
-          </div>
-          
-          <div class="entry-content-wrapper">
-            <div class="entry-content">
-              <?php the_content(); ?>
             </div>
-            
-            <?php comments_template(); ?>
+          <?php endif; ?>
+
+          <div class="entry-content">
+            <?php the_content(); ?>
           </div>
+
+          <?php comments_template(); ?>
         </article>
       <?php endwhile;
     else :
