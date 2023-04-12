@@ -304,21 +304,41 @@ main {
 
   /* About Page */
 
-  .image-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; 
-    background-color: #ffffff; 
-    padding: 20px; 
-  }
+/* About Page */
 
-  .circle-image {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin: 10px;
-    object-fit: cover;
-  }
+.about-section {
+  display: flex;
+  justify-content: center;
+}
+
+.about-grid-container {
+  max-width: 1200px; /* Set a max-width to prevent the content from expanding too much on larger screens */
+}
+
+.about-title {
+  text-align: left;
+  margin-right: 40px;
+}
+
+.about-paragraph {
+  text-align: left;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.circle-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  object-fit: cover;
+}
 
 /* Blog */
 

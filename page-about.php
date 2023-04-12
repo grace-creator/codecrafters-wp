@@ -5,7 +5,6 @@
 <?php get_header(); ?>
 
 <main>
-   
   <div class="about-section">
     <div class="about-grid-container">
       <h1 class="about-title">About</h1>
@@ -29,6 +28,5 @@
   endif;
   ?>
 </main>
-
 
 <?php get_footer(); ?>
