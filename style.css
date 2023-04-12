@@ -352,9 +352,40 @@ main {
   
   .comments-container {
     margin: 0 auto;
-    max-width: 6in;
+    max-width: 7in;
   }
   
+  .post-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  .post-thumbnail {
+    flex: 0 0 3in;
+    width: 3in;
+    height: 2in;
+    overflow: hidden;
+  }
+  
+  .post-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .post-content {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  
+  .entry-summary p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   
 
   /* Hyperlinks */
