@@ -307,3 +307,27 @@ main {
     margin: 10px;
     object-fit: cover;
   }
+
+  /* Blog */
+
+  .blog-container article {
+    margin: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .single-post .entry-title {
+    text-align: center;
+  }
+  
+
+  /* Hyperlinks */
+
+  a {
+    color: #000000; /* Black color */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

@@ -18,11 +18,13 @@
     if ($blog_posts->have_posts()) :
       while ($blog_posts->have_posts()) : $blog_posts->the_post(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <header class="entry-header">
-            <h2 class="entry-title">
-              <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-            </h2>
-          </header>
+        <header class="entry-header">
+        <h2 class="entry-title">
+            <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+         </h2>
+        </header>
+
+
           <?php if (has_post_thumbnail()) : ?>
             <div class="post-thumbnail">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
