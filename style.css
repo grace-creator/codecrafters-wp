@@ -462,3 +462,52 @@ main {
     text-decoration: underline;
   }
   
+
+  /* Projects */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: relative;
+}
+
+.project:hover .project-image {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-image {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .project {
+    width: 100%;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+  .project {
+    width: 100%;
+  }
+}
