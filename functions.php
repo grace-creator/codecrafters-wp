@@ -23,8 +23,8 @@ function codecrafters_widgets_init() {
         'name'          => __( 'Footer Widgets', 'codecrafters' ),
         'id'            => 'footer-widgets',
         'description'   => __( 'Widgets in this area will be shown in the footer.', 'codecrafters' ),
-        'before_widget' => '<section id="%1$s" class="footer-widget %2$s">',
-        'after_widget'  => '</section>',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
         'before_title'  => '<h2 class="widgettitle">',
         'after_title'   => '</h2>',
     ) );
