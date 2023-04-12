@@ -31,5 +31,10 @@ function codecrafters_widgets_init() {
 }
 add_action( 'widgets_init', 'codecrafters_widgets_init' );
 
+/*add support for post thumbnails (featured images)  */
+
+add_theme_support('post-thumbnails');
+
+
 
 ?>
