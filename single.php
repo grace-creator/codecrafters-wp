@@ -10,17 +10,21 @@
             <h1 class="entry-title"><?php the_title(); ?></h1>
           </header>
           
-          <?php if (has_post_thumbnail()) : ?>
-            <div class="post-thumbnail">
-              <?php the_post_thumbnail(); ?>
-            </div>
-          <?php endif; ?>
-          
-          <div class="entry-content">
-            <?php the_content(); ?>
+          <div class="post-thumbnail-wrapper">
+            <?php if (has_post_thumbnail()) : ?>
+              <div class="post-thumbnail">
+                <?php the_post_thumbnail(); ?>
+              </div>
+            <?php endif; ?>
           </div>
           
-          <?php comments_template(); ?>
+          <div class="entry-content-wrapper">
+            <div class="entry-content">
+              <?php the_content(); ?>
+            </div>
+            
+            <?php comments_template(); ?>
+          </div>
         </article>
       <?php endwhile;
     else :
