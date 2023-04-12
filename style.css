@@ -110,7 +110,7 @@ main {
 }
 
 .about-title {
-  font-size: 200px;
+  font-size: 150px;
   text-align: left;
   grid-area: title;
 }
@@ -122,6 +122,7 @@ main {
 }
 
 .about-grid-container {
+  max-width: 1300px;
   display: grid;
   grid-template-areas:
     "title ."
@@ -306,10 +307,3 @@ main {
     margin: 10px;
     object-fit: cover;
   }
-
- /* Search Bar */
-.search-form input[type="search"] {
-  max-width: 50px; /* Adjust this value to your desired width */
-  width: 100%;
-  box-sizing: border-box; /* Add this to include padding and border in the width calculation */
-}
