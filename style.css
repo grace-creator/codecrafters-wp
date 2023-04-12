@@ -379,7 +379,7 @@ main {
     margin-left: 20px;
   }
   
-  
+
   .entry-summary p {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -387,6 +387,24 @@ main {
     overflow: hidden;
   }
   
+
+  /*single post*/
+  .single-post-container .post-thumbnail {
+    max-height: 500px; /* Adjust this value to control the maximum height of the image */
+    overflow: hidden;
+  }
+  
+  .single-post-container .post-thumbnail img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .single-post-container .entry-content {
+    clear: both;
+  }
+  
+
 
   /* Hyperlinks */
 
