@@ -14,9 +14,9 @@
   </div>
 
   <div class="image-container">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/closed-e.png" alt="Image 1" class="circle-image">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/ghost2.png" alt="Image 2" class="circle-image">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/ghost2.png" alt="Image 3" class="circle-image">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/ball.png" alt="Image 1" class="circle-image">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/golden.png" alt="Image 2" class="circle-image">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/neckl.png" alt="Image 3" class="circle-image">
   </div>
 
   <?php
