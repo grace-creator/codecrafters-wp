@@ -343,42 +343,12 @@ main {
 /* Blog */
 
 .blog-container article {
-  margin: 10px;
-  margin-bottom: 50px;
+  margin: 0;
+  margin-bottom: 0;
 }
 
 .single-post .entry-title {
   text-align: center;
-}
-
-.post-thumbnail {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.post-thumbnail img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.single-post .post-thumbnail {
-  width: 50%;
-  margin: 0 auto 20px;
-}
-
-.single-post .post-thumbnail img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-@media (min-width: 1200px) {
-  .single-post .entry-content p {
-    max-width: 7in;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 .comments-container {
@@ -387,21 +357,7 @@ main {
 }
 
 .post-wrapper {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 3px;
-}
-
-.post-thumbnail {
-  flex: 0 0 3in;
-  width: 3in;
-  height: 2in;
-  overflow: hidden;
-}
-
-.post-thumbnail img {
-  width: 100%;
-  object-fit: cover;
+  height: auto;
 }
 
 .post-content {
@@ -420,20 +376,6 @@ main {
 @media (max-width: 767px) {
   .blog-container {
     padding: 0;
-  }
-
-  .post-thumbnail {
-    width: 100%; /* Set the width of the thumbnail container to 100% */
-    height: auto; /* Set the height to auto to maintain the aspect ratio */
-    margin-bottom: 15px; /* Add some space between the image and the title */
-  }
-
-  .post-thumbnail img {
-    width: 50%;
-    margin-left: 0;
-    max-height: 90px; /* Set a max-height for the image on mobile devices */
-    height: auto; /* Set the height to auto to maintain the aspect ratio */
-    object-fit: cover;
   }
 
   .entry-summary {
